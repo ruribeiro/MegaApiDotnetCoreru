@@ -1,7 +1,7 @@
 <h1 align="center">
   <br />
   <img
-    src="./_docs/assets/icon.png"
+    src="./_docs/assets/epicmega.gif"
     alt="Mega Man Robots API"
     width="150"
   />
@@ -29,15 +29,13 @@
 </h1>
 
 <p align="center">
-  This .NET Core API is designed to serve JSON formatted data about bosses from
-  the Mega Man series. It is a backend service built with .NET Core 3.1 and
-  various modern dependencies for data management and API response handling.
+  Esta API .NET Core foi projetada para fornecer dados formatados em JSON sobre os chefes da série Mega Man. É um serviço backend construído com .NET Core 3.1 e várias dependências modernas para gerenciamento de dados e manipulação de respostas de API.
   <br />
 </p>
 
 <p align="center">
-  Developed with Entity Framework Core and other modern .NET technologies, this
-  project aims to provide a robust API for accessing Mega Man robot data.
+  Desenvolvido com Entity Framework Core e outras tecnologias modernas .NET, este
+  projeto visa fornecer uma API robusta para acessar dados dos robôs de Mega Man.
   <br />
 </p>
 
@@ -46,47 +44,45 @@
   <img src="./_docs/assets/carbon.png" />
 </p>
 
-## API Endpoints
+## Endpoints da API
 
 <table align="center">
   <tr>
-    <th>Method</th>
+    <th>Método</th>
     <th>Endpoint</th>
-    <th>Description</th>
+    <th>Descrição</th>
   </tr>
   <tr>
     <td>GET</td>
     <td>/api/v1/robots</td>
-    <td>Returns a list of all robots</td>
+    <td>Retorna uma lista de todos os robôs</td>
   </tr>
   <tr>
     <td>GET</td>
     <td>/api/v1/robots/{id}</td>
-    <td>Returns details of a specific robot by ID</td>
+    <td>Retorna detalhes de um robô específico por ID</td>
   </tr>
   <tr>
     <td>POST</td>
     <td>/api/v1/robots</td>
-    <td>Endpoint to create a new robot entry</td>
+    <td>Endpoint para criar uma nova entrada de robô</td>
   </tr>
 </table>
 
-## Techniques Used
+## Técnicas Utilizadas
 
 <p align="center">
-  - <b>Entity Framework Core:</b> ORM for data management.<br />
-  - <b>RESTful API Design:</b> Ensures clear and effective communication
-  endpoints.<br />
-  - <b>Dependency Injection:</b> Used throughout to promote loose coupling and
-  enhanced testability.<br />
+  - <b>Entity Framework Core:</b> ORM para gerenciamento de dados.<br />
+  - <b>Design de API RESTful:</b> Garante endpoints de comunicação claros e eficazes.<br />
+  - <b>Injeção de Dependência:</b> Usado em toda a aplicação para promover baixo acoplamento e maior testabilidade.<br />
 </p>
 
-## Dependencies
+## Dependências
 
 <table align="center">
   <tr>
-    <th>Package</th>
-    <th>Version</th>
+    <th>Pacote</th>
+    <th>Versão</th>
     <th>Link</th>
   </tr>
   <tr>
@@ -128,23 +124,17 @@
   </tr>
 </table>
 
-## :gear: Arch
+## :gear: Arquitetura
 
 ```🌐
 src
-├── 📂 Controllers      [Routes for endpoints]
-├── 📂 Models           [Database models]
-├── 📂 Services         [Business rules]
-├── 📂 Middlewares      [Intermediate functions between the HTTP request and the final server response]
-├── 📂 Database         [Structures related to the database]
-│   ├── 📂 DTOs             [Input Models and View Models (Data Transfer Objects)]
-│   ├── 📂 EntityFramework  [Files related to the ORM Entity Framework]
-│   │     ├── 📂 Context         [Entity context settings]
-│   │     ├── 📂 Migrations      [Migrations for database updates]
-│   ├── 📂 Repositories     [Repository pattern]
-```
-
-## License This software is licensed under the terms of the [MIT]
-
-⌨️ FelipeAguiar -
-[Github](https://github.com/felipeAguiarCode)
+├── 📂 Controllers      [Rotas para endpoints]
+├── 📂 Models           [Modelos de banco de dados]
+├── 📂 Services         [Regras de negócios]
+├── 📂 Middlewares      [Funções intermediárias entre a solicitação HTTP e a resposta final do servidor]
+├── 📂 Database         [Estruturas relacionadas ao banco de dados]
+│   ├── 📂 DTOs             [Modelos de entrada e View Models (Objetos de Transferência de Dados)]
+│   ├── 📂 EntityFramework  [Arquivos relacionados ao ORM Entity Framework]
+│   │     ├── 📂 Context         [Configurações do contexto da entidade]
+│   │     ├── 📂 Migrations      [Migrações para atualizações do banco de dados]
+│   ├── 📂 Repositories     [Padrão de repositório]
